@@ -14,8 +14,8 @@
 			<h3>{title}</h3>
 			<p>{description}</p>
 		</header>
+		<div id="color" style="background-color: {color};" />
 	</a>
-	<div id="color" style="background-color: {color};" />
 </article>
 
 <style>
@@ -26,7 +26,6 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		cursor: default;
 		height: 40vh;
 		max-height: 40em;
 		min-height: 23em;
