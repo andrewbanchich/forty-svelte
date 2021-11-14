@@ -1,6 +1,8 @@
 import preprocess from 'svelte-preprocess';
 import adapter from '@sveltejs/adapter-static';
 
+const dev = process.env.NODE_ENV === 'development';
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   // Consult https://github.com/sveltejs/svelte-preprocess
@@ -9,7 +11,7 @@ const config = {
   kit: {
     adapter: adapter(),
     paths: {
-      base: '/forty-svelte'
+      base: dev ? '' : '/forty-svelte'
     },
     ssr: false,
     target: '#svelte'
