@@ -9,6 +9,7 @@ const config = {
 
   kit: {
     adapter: adapter(),
+    appDir: '/forty-svelte',
     paths: {
       base: '/forty-svelte'
     },
