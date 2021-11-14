@@ -1,3 +1,5 @@
+// https://github.com/sveltejs/kit/tree/master/packages/adapter-static#github-pages
+
 import preprocess from 'svelte-preprocess';
 import adapter from '@sveltejs/adapter-static';
 
@@ -11,6 +13,7 @@ const config = {
   kit: {
     adapter: adapter(),
     paths: {
+      assets: dev ? '' : '/forty-svelte/assets',
       base: dev ? '' : '/forty-svelte'
     },
     ssr: false,
