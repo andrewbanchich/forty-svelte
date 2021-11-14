@@ -4,6 +4,8 @@
 </script>
 
 <script>
+	import { assets } from '$app/paths';
+
 	import Header from '$lib/Header.svelte';
 	import Menu from '$lib/Menu.svelte';
 	import Contact from '$lib/Contact.svelte';
@@ -11,7 +13,7 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href="/favicon.png" />
+	<link rel="icon" href="{assets}/favicon.png" />
 </svelte:head>
 
 <div id="wrapper">
