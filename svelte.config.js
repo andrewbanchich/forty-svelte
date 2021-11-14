@@ -8,7 +8,6 @@ const config = {
   preprocess: preprocess(),
   kit: {
     adapter: adapter(),
-    appDir: 'forty-svelte',
     ssr: false,
     target: '#svelte'
   }
