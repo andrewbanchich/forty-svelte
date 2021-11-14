@@ -6,13 +6,9 @@ const config = {
   // Consult https://github.com/sveltejs/svelte-preprocess
   // for more information about preprocessors
   preprocess: preprocess(),
-
   kit: {
     adapter: adapter(),
     appDir: 'forty-svelte',
-    paths: {
-      base: '/forty-svelte'
-    },
     ssr: false,
     target: '#svelte'
   }
