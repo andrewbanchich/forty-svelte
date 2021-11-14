@@ -26,10 +26,10 @@
 			: '#87c5a4';
 </script>
 
-<section id="one" class="tiles">
+<section id="tiles">
 	{#each articles as article, i}
 		<Tile
-			width={width(i)}
+			width="100%"
 			title={article.title}
 			color={color(i)}
 			description={article.description}
@@ -39,21 +39,20 @@
 </section>
 
 <style>
-	.tiles {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
+	/* #tiles {
 		display: flex;
-		-moz-flex-wrap: wrap;
-		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		border-top: 0 !important;
+		border-top: 0;
+		} */
+
+	#tiles {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
 	}
 
-	@media screen and (max-width: 480px) {
-		.tiles {
-			display: block;
+	@media (max-width: 540px) {
+		#tiles {
+			grid-template-columns: 1fr;
 		}
 	}
 </style>
