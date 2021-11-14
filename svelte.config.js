@@ -13,7 +13,6 @@ const config = {
   kit: {
     adapter: adapter(),
     paths: {
-      assets: '/forty-svelte',
       base: dev ? '' : '/forty-svelte'
     },
     ssr: false,
