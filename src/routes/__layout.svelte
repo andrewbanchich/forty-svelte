@@ -10,6 +10,10 @@
 	import Footer from '$lib/Footer.svelte';
 </script>
 
+<svelte:head>
+	<link rel="icon" href="/favicon.png" />
+</svelte:head>
+
 <div id="wrapper">
 	<Header />
 	<Menu />

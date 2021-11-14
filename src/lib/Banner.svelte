@@ -1,4 +1,8 @@
-<section id="banner" class="major">
+<script>
+	import { assets } from '$app/paths';
+</script>
+
+<section id="banner" class="major" style="background-image: url('{assets}/images/banner.jpg');">
 	<div class="inner">
 		<header class="major">
 			<h1>Hi, my name is Forty</h1>
@@ -21,7 +25,6 @@
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url('/images/banner.jpg');
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
