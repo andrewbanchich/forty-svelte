@@ -1,4 +1,6 @@
 <script>
+	import { assets } from '$app/paths';
+
 	export let title;
 	export let description;
 	export let image;
@@ -6,7 +8,7 @@
 	export let color;
 </script>
 
-<article style="background-image: url('{image}'); width: {width};">
+<article style="background-image: url('{assets}{image}'); width: {width};">
 	<div id="color" style="background-color: {color};" />
 	<header class="major">
 		<h3><a href="landing" class="link">{title}</a></h3>
