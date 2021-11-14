@@ -1,3 +1,8 @@
+<script context="module" lang="ts">
+	// Disable SSR in dev mode since we're using `adapter-static`.
+	export const ssr = false;
+</script>
+
 <script>
 	import Header from '$lib/Header.svelte';
 	import Menu from '$lib/Menu.svelte';
