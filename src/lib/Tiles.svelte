@@ -1,19 +1,41 @@
-<script>
+<script lang="ts">
 	import Tile from '$lib/Tile.svelte';
+
+	const articles = [
+		{ title: 'Aliquam', description: 'Ipsum dolor sit amet', image: '/images/pic01.jpg' },
+		{ title: 'Tempus', description: 'Feugiat amet tempus', image: '/images/pic02.jpg' },
+		{ title: 'Magna', description: 'Lorem etiam nullam', image: '/images/pic03.jpg' },
+		{ title: 'Ipsum', description: 'Nisl sed aliquam', image: '/images/pic04.jpg' },
+		{ title: 'Consequat', description: 'Ipsum dolor sit amet', image: '/images/pic05.jpg' },
+		{ title: 'Etiam', description: 'Feugiat amet tempus', image: '/images/pic06.jpg' }
+	];
+
+	const width = (i: number) => (i % 4 === 0 || i % 4 === 3 ? '40%' : '60%');
+
+	const color = (i: number) =>
+		i % 6 === 0
+			? '#6fc3df'
+			: i % 6 === 1
+			? '#8d82c4'
+			: i % 6 === 2
+			? '#ec8d81'
+			: i % 6 === 3
+			? '#e7b788'
+			: i % 6 === 4
+			? '#8ea9e8'
+			: '#87c5a4';
 </script>
 
 <section id="one" class="tiles">
-	<Tile width="40%" title="Aliquam" description="Ipsum dolor sit amet" image="/images/pic01.jpg" />
-	<Tile width="60%" title="Tempus" description="feugiat amet tempus" image="/images/pic02.jpg" />
-	<Tile width="60%" title="Magna" description="Lorem etiam nullam" image="/images/pic03.jpg" />
-	<Tile width="40%" title="Ipsum" description="Nisl sed aliquam" image="/images/pic04.jpg" />
-	<Tile
-		width="40%"
-		title="Consequat"
-		description="Ipsum dolor sit amet"
-		image="/images/pic05.jpg"
-	/>
-	<Tile width="60%" title="Etiam" description="Feugiat amet tempus" image="/images/pic06.jpg" />
+	{#each articles as article, i}
+		<Tile
+			width={width(i)}
+			title={article.title}
+			color={color(i)}
+			description={article.description}
+			image={article.image}
+		/>
+	{/each}
 </section>
 
 <style>
@@ -29,66 +51,9 @@
 		border-top: 0 !important;
 	}
 
-	.tiles article:nth-child(6n - 5):before {
-		background-color: #6fc3df;
-	}
-
-	.tiles article:nth-child(6n - 4):before {
-		background-color: #8d82c4;
-	}
-
-	.tiles article:nth-child(6n - 3):before {
-		background-color: #ec8d81;
-	}
-
-	.tiles article:nth-child(6n - 2):before {
-		background-color: #e7b788;
-	}
-
-	.tiles article:nth-child(6n - 1):before {
-		background-color: #8ea9e8;
-	}
-
-	.tiles article:nth-child(6n):before {
-		background-color: #87c5a4;
-	}
-
-	@media screen and (max-width: 1280px) {
-		.tiles article {
-			padding: 4em 3em 2em 3em;
-			height: 30vh;
-			max-height: 30em;
-			min-height: 20em;
-		}
-	}
-
-	@media screen and (max-width: 980px) {
-		.tiles article {
-			width: 50% !important;
-		}
-	}
-
-	@media screen and (max-width: 736px) {
-		.tiles article {
-			padding: 3em 1.5em 1em 1.5em;
-			height: 16em;
-			max-height: none;
-			min-height: 0;
-		}
-
-		.tiles article h3 {
-			font-size: 1.5em;
-		}
-	}
-
 	@media screen and (max-width: 480px) {
 		.tiles {
 			display: block;
-		}
-
-		.tiles article {
-			height: 20em;
-			width: 100% !important;
 		}
 	}
 </style>

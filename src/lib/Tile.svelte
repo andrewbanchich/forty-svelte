@@ -3,9 +3,11 @@
 	export let description;
 	export let image;
 	export let width;
+	export let color;
 </script>
 
 <article style="background-image: url('{image}'); width: {width};">
+	<div id="color" style="background-color: {color};" />
 	<header class="major">
 		<h3><a href="landing" class="link">{title}</a></h3>
 		<p>{description}</p>
@@ -46,8 +48,39 @@
 		border-top: 0 !important;
 	}
 
-	article .image {
-		display: none;
+	@media screen and (max-width: 1280px) {
+		article {
+			padding: 4em 3em 2em 3em;
+			height: 30vh;
+			max-height: 30em;
+			min-height: 20em;
+		}
+	}
+
+	@media screen and (max-width: 980px) {
+		article {
+			width: 50% !important;
+		}
+	}
+
+	@media screen and (max-width: 736px) {
+		article {
+			padding: 3em 1.5em 1em 1.5em;
+			height: 16em;
+			max-height: none;
+			min-height: 0;
+		}
+
+		article h3 {
+			font-size: 1.5em;
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+		article {
+			height: 20em;
+			width: 100% !important;
+		}
 	}
 
 	article header {
@@ -73,7 +106,7 @@
 		z-index: 4;
 	}
 
-	article:before {
+	article #color {
 		-moz-transition: opacity 0.5s ease;
 		-webkit-transition: opacity 0.5s ease;
 		-ms-transition: opacity 0.5s ease;
@@ -101,7 +134,7 @@
 		z-index: 1;
 	}
 
-	article:hover:before {
+	article:hover #color {
 		opacity: 0;
 	}
 
