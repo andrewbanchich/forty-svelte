@@ -8,7 +8,9 @@ const config = {
   preprocess: preprocess(),
   kit: {
     adapter: adapter(),
-    appDir: 'forty-svelte/_app',
+    paths: {
+      base: '/forty-svelte'
+    },
     ssr: false,
     target: '#svelte'
   }
