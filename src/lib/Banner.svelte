@@ -1,22 +1,23 @@
 <script>
 	import { assets } from '$app/paths';
+
+	export let color = '#242943';
+	export let image;
+	export let major = false;
 </script>
 
-<section id="banner" class="major" style="background-image: url('{assets}/images/banner.jpg');">
+<section id="banner" class:major style="background-image: url('{assets}{image}');">
 	<div class="inner">
 		<header class="major">
-			<h1>Hi, my name is Forty</h1>
+			<h1><slot name="header" /></h1>
 		</header>
-		<div class="content">
-			<p>
-				A responsive site template designed by HTML5 UP<br />
-				and released under the Creative Commons.
-			</p>
-			<ul class="actions">
-				<li><a href="#one" class="button next scrolly">Get Started</a></li>
-			</ul>
+
+		<div id="content">
+			<slot />
 		</div>
 	</div>
+
+	<div id="color" style="background-color: {color};" />
 </section>
 
 <style>
@@ -44,7 +45,14 @@
 		top: -3.25em;
 	}
 
-	#banner:after {
+	#content {
+		font-size: 0.7em;
+		font-weight: 600;
+		letter-spacing: 0.25em;
+		text-transform: uppercase;
+	}
+
+	#color {
 		-moz-transition: opacity 2.5s ease;
 		-webkit-transition: opacity 2.5s ease;
 		-ms-transition: opacity 2.5s ease;
@@ -54,7 +62,6 @@
 		-ms-transition-delay: 0.75s;
 		transition-delay: 0.75s;
 		pointer-events: none;
-		background-color: #242943;
 		content: '';
 		display: block;
 		height: 100%;
@@ -100,34 +107,6 @@
 		max-width: 100%;
 	}
 
-	#banner > .inner .content {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
-		align-items: center;
-		margin: 0 0 2em 0;
-	}
-
-	#banner > .inner .content > * {
-		margin-right: 1.5em;
-		margin-bottom: 0;
-	}
-
-	#banner > .inner .content > :last-child {
-		margin-right: 0;
-	}
-
-	#banner > .inner .content p {
-		font-size: 0.7em;
-		font-weight: 600;
-		letter-spacing: 0.25em;
-		text-transform: uppercase;
-	}
-
 	#banner.major {
 		height: 75vh;
 		min-height: 30em;
@@ -140,10 +119,6 @@
 
 	#banner.style1:after {
 		background-color: #6fc3df;
-	}
-
-	#banner.style2:after {
-		background-color: #8d82c4;
 	}
 
 	#banner.style3:after {
@@ -162,9 +137,11 @@
 		background-color: #87c5a4;
 	}
 
-	body.is-preload #banner:after {
+	/* 
+		body.is-preload #banner:after {
 		opacity: 1;
-	}
+		}
+	*/
 
 	body.is-preload #banner > .inner {
 		-moz-filter: blur(0.125em);
@@ -198,16 +175,11 @@
 			font-size: 2em;
 		}
 
-		#banner > .inner .content {
+		#content {
 			display: block;
 		}
 
-		#banner > .inner .content > * {
-			margin-right: 0;
-			margin-bottom: 2em;
-		}
-
-		#banner.major {
+		.major {
 			height: auto;
 			min-height: 0;
 			max-height: none;
@@ -219,7 +191,7 @@
 			padding: 6em 0 2em 0;
 		}
 
-		#banner > .inner .content p br {
+		#content p br {
 			display: none;
 		}
 

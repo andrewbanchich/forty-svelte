@@ -1,21 +1,15 @@
-<!-- Banner -->
-<!-- Note: The "styleN" class below should match that of the header element. -->
-<section id="banner" class="style2">
-	<div class="inner">
-		<span class="image">
-			<img src="images/pic07.jpg" alt="" />
-		</span>
-		<header class="major">
-			<h1>Landing</h1>
-		</header>
-		<div class="content">
-			<p>
-				Lorem ipsum dolor sit amet nullam consequat<br />
-				sed veroeros. tempus adipiscing nulla.
-			</p>
-		</div>
-	</div>
-</section>
+<script>
+	import Banner from '$lib/Banner.svelte';
+</script>
+
+<Banner color="#8d82c4" image="/images/pic07.jpg">
+	<span slot="header">Landing</span>
+
+	<p>
+		Lorem ipsum dolor sit amet nullam consequat<br />
+		sed veroeros. tempus adipiscing nulla.
+	</p>
+</Banner>
 
 <!-- Main -->
 <div id="main">
