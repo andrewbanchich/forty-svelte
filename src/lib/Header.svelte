@@ -1,5 +1,9 @@
+<script>
+	import { base } from '$app/paths';
+</script>
+
 <header id="header">
-	<a href="/" class="logo">
+	<a href={base} class="logo">
 		<strong>Forty</strong>
 		<span>by HTML5 UP</span>
 	</a>
@@ -11,8 +15,8 @@
 <style>
 	#header {
 		display: flex;
-		background-color: #2a2f4a;
-		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
+		/* background-color: #2a2f4a; */
+		/* box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15); */
 		cursor: default;
 		font-weight: 600;
 		height: 3.25em;
