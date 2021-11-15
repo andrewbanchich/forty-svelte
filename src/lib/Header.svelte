@@ -1,4 +1,4 @@
-<header id="header" class="alt">
+<header id="header">
 	<a href="/" class="logo">
 		<strong>Forty</strong>
 		<span>by HTML5 UP</span>
@@ -9,58 +9,7 @@
 </header>
 
 <style>
-	@-moz-keyframes reveal-header {
-		0% {
-			top: -4em;
-			opacity: 0;
-		}
-
-		100% {
-			top: 0;
-			opacity: 1;
-		}
-	}
-
-	@-webkit-keyframes reveal-header {
-		0% {
-			top: -4em;
-			opacity: 0;
-		}
-
-		100% {
-			top: 0;
-			opacity: 1;
-		}
-	}
-
-	@-ms-keyframes reveal-header {
-		0% {
-			top: -4em;
-			opacity: 0;
-		}
-
-		100% {
-			top: 0;
-			opacity: 1;
-		}
-	}
-
-	@keyframes reveal-header {
-		0% {
-			top: -4em;
-			opacity: 0;
-		}
-
-		100% {
-			top: 0;
-			opacity: 1;
-		}
-	}
-
 	#header {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
 		display: flex;
 		background-color: #2a2f4a;
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
@@ -75,7 +24,7 @@
 		text-transform: uppercase;
 		top: 0;
 		width: 100%;
-		z-index: 10000;
+		z-index: 1000;
 	}
 
 	#header .logo {
@@ -88,9 +37,6 @@
 	}
 
 	#header .logo strong {
-		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		background-color: #ffffff;
 		color: #242943;
@@ -109,17 +55,8 @@
 	}
 
 	#header nav {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
 		display: flex;
-		-moz-justify-content: -moz-flex-end;
-		-webkit-justify-content: -webkit-flex-end;
-		-ms-justify-content: -ms-flex-end;
 		justify-content: flex-end;
-		-moz-flex-grow: 1;
-		-webkit-flex-grow: 1;
-		-ms-flex-grow: 1;
 		flex-grow: 1;
 		height: inherit;
 		line-height: inherit;
@@ -156,18 +93,13 @@
 		position: absolute;
 		right: 1.5em;
 		top: 0;
-		vertical-align: middle;
 		width: 24px;
 	}
 
 	#header nav a[href='#menu']:after {
-		-moz-transition: opacity 0.2s ease-in-out;
-		-webkit-transition: opacity 0.2s ease-in-out;
-		-ms-transition: opacity 0.2s ease-in-out;
 		transition: opacity 0.2s ease-in-out;
 		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='32' viewBox='0 0 24 32' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 2px%3B stroke: %239bf1ff%3B %7D%3C/style%3E%3Cline x1='0' y1='11' x2='24' y2='11' /%3E%3Cline x1='0' y1='21' x2='24' y2='21' /%3E%3Cline x1='0' y1='16' x2='24' y2='16' /%3E%3C/svg%3E");
 		opacity: 0;
-		z-index: 1;
 	}
 
 	#header nav a[href='#menu']:hover:after,
@@ -182,31 +114,6 @@
 	#header nav a[href='#menu']:last-child:before,
 	#header nav a[href='#menu']:last-child:after {
 		right: 2em;
-	}
-
-	#header.reveal {
-		-moz-animation: reveal-header 0.35s ease;
-		-webkit-animation: reveal-header 0.35s ease;
-		-ms-animation: reveal-header 0.35s ease;
-		animation: reveal-header 0.35s ease;
-	}
-
-	#header.alt {
-		-moz-transition: opacity 2.5s ease;
-		-webkit-transition: opacity 2.5s ease;
-		-ms-transition: opacity 2.5s ease;
-		transition: opacity 2.5s ease;
-		-moz-transition-delay: 0.75s;
-		-webkit-transition-delay: 0.75s;
-		-ms-transition-delay: 0.75s;
-		transition-delay: 0.75s;
-		-moz-animation: none;
-		-webkit-animation: none;
-		-ms-animation: none;
-		animation: none;
-		background-color: transparent;
-		box-shadow: none;
-		position: absolute;
 	}
 
 	#header.alt.style1 .logo strong {
@@ -231,10 +138,6 @@
 
 	#header.alt.style6 .logo strong {
 		color: #87c5a4;
-	}
-
-	body.is-preload #header.alt {
-		opacity: 0;
 	}
 
 	@media screen and (max-width: 1680px) {

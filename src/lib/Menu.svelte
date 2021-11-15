@@ -13,21 +13,12 @@
 
 <style>
 	#menu {
-		-moz-transition: -moz-transform 0.35s ease, opacity 0.35s ease, visibility 0.35s;
-		-webkit-transition: -webkit-transform 0.35s ease, opacity 0.35s ease, visibility 0.35s;
-		-ms-transition: -ms-transform 0.35s ease, opacity 0.35s ease, visibility 0.35s;
 		transition: transform 0.35s ease, opacity 0.35s ease, visibility 0.35s;
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
 		align-items: center;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		-moz-justify-content: center;
-		-webkit-justify-content: center;
-		-ms-justify-content: center;
 		justify-content: center;
 		pointer-events: none;
 		background: rgba(36, 41, 67, 0.9);
@@ -41,7 +32,6 @@
 		top: 0;
 		visibility: hidden;
 		width: 100%;
-		z-index: 10002;
 	}
 
 	#menu .inner {
