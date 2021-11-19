@@ -14,7 +14,7 @@
 
 <svelte:head>
 	<link rel="icon" href="/favicon.png" />
-	<link rel="stylesheet" href="{base}/css/main.css" />
+	<link rel="stylesheet" href="{base}/assets/css/main.css" />
 </svelte:head>
 
 <div id="wrapper">
