@@ -13,8 +13,8 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href="{base}{assets}/favicon.png" />
-	<link rel="stylesheet" href="{base}{assets}/css/main.css" />
+	<link rel="icon" href="{assets}/favicon.png" />
+	<link rel="stylesheet" href="{assets}/css/main.css" />
 </svelte:head>
 
 <div id="wrapper">
