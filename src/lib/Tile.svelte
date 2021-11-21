@@ -9,7 +9,7 @@
 </script>
 
 <article style="background-image: url('{assets}{image}'); width: {width};">
-	<a href="landing">
+	<a href="/landing">
 		<header class="major">
 			<h3>{title}</h3>
 			<p>{description}</p>
