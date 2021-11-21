@@ -1,5 +1,5 @@
 <script>
-	import { assets } from '$app/paths';
+	import { assets, base } from '$app/paths';
 
 	export let title;
 	export let description;
@@ -9,7 +9,7 @@
 </script>
 
 <article style="background-image: url('{assets}{image}'); width: {width};">
-	<a href="/landing">
+	<a href="{base}/landing">
 		<header class="major">
 			<h3>{title}</h3>
 			<p>{description}</p>
