@@ -3,7 +3,7 @@
 </script>
 
 <header id="header">
-	<a href="/{base}" class="logo">
+	<a href={base} class="logo">
 		<strong>Forty</strong>
 		<span>by HTML5 UP</span>
 	</a>
