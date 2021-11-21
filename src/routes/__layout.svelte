@@ -12,6 +12,11 @@
 	import Footer from '$lib/Footer.svelte';
 </script>
 
+<svelte:head>
+	<link rel="icon" href="{base}/favicon.png" />
+	<link rel="stylesheet" href="{base}/assets/css/main.css" />
+</svelte:head>
+
 <div id="wrapper">
 	<Header />
 	<Menu />
