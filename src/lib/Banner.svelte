@@ -43,6 +43,27 @@
 		min-height: 22em;
 	}
 
+	/* #banner::after {
+		transition: opacity 2.5s ease;
+		transition-delay: 0s;
+		-moz-transition-delay: 0.75s;
+		-webkit-transition-delay: 0.75s;
+		-ms-transition-delay: 0.75s;
+		transition-delay: 0.75s;
+		pointer-events: none;
+		background-color: #242943;
+		content: '';
+		display: block;
+		height: 100%;
+		left: 0;
+		opacity: 0.85;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+		}
+	 */
+
 	#content {
 		font-size: 0.7em;
 		font-weight: 600;

@@ -1,8 +1,9 @@
 <script lang="ts">
+	import { fade } from 'svelte/transition';
 	export let open;
 </script>
 
-<nav id="menu">
+<nav id="menu" transition:fade={{ duration: 150 }}>
 	<div class="inner">
 		<ul class="links">
 			<li><a href="/">Home</a></li>
@@ -39,6 +40,8 @@
 		top: 0;
 		/* visibility: hidden; */
 		width: 100%;
+		backdrop-filter: blur(0.5em);
+
 		/* z-index: 3; */
 	}
 

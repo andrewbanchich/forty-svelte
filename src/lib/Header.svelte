@@ -17,8 +17,8 @@
 	#header {
 		display: flex;
 		justify-content: space-between;
-		background-color: #2a2f4a;
-		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
+		/* background-color: #2a2f4a;
+			 box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15); */
 		cursor: default;
 		font-weight: 600;
 		height: 3.25em;
