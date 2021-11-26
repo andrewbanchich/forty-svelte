@@ -9,12 +9,11 @@
 </script>
 
 <article style="background-image: url('{assets}{image}'); width: {width};">
-	<a href="{base}/landing">
+	<a href="{base}/landing" style="background-color: {color};">
 		<header class="major">
 			<h3>{title}</h3>
 			<p>{description}</p>
 		</header>
-		<div id="color" style="background-color: {color};" />
 	</a>
 </article>
 
@@ -22,7 +21,6 @@
 	article {
 		align-items: center;
 		display: flex;
-		transition: transform 0.25s ease, opacity 0.25s ease, filter 1s ease, -webkit-filter 1s ease;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -32,7 +30,6 @@
 		overflow: hidden;
 		position: relative;
 		width: 40%;
-		padding: 4em 3em 2em 3em;
 	}
 
 	article:nth-child(4n-1),
@@ -45,21 +42,8 @@
 		grid-column: span 2;
 	}
 
-	/* @media screen and (max-width: 980px) {
-		article {
-		width: 50% !important;
-		}
-		}
-
-		@media screen and (max-width: 480px) {
-		article {
-		width: 100% !important;
-		}
-		} */
-
 	header {
 		position: relative;
-		/* z-index: 3; */
 	}
 
 	article h3 {
@@ -72,38 +56,12 @@
 		border: 0;
 		height: 100%;
 		width: 100%;
+		padding: 4em 3em 2em 3em;
+		transition: background-color ease 250ms;
 	}
 
-	article #color {
-		-moz-transition: opacity 0.5s ease;
-		-webkit-transition: opacity 0.5s ease;
-		-ms-transition: opacity 0.5s ease;
-		transition: opacity 0.5s ease;
-		bottom: 0;
-		content: '';
-		display: block;
-		height: 100%;
-		left: 0;
-		opacity: 0.85;
-		position: absolute;
-		width: 100%;
-		/* z-index: 2; */
-	}
-
-	article:after {
-		background-color: rgba(36, 41, 67, 0.25);
-		content: '';
-		display: block;
-		height: 100%;
-		left: 0;
-		position: absolute;
-		top: 0;
-		width: 100%;
-		/* z-index: 1; */
-	}
-
-	article:hover #color {
-		opacity: 0;
+	a:hover {
+		background-color: transparent !important;
 	}
 
 	header.major {

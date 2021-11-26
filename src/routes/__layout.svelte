@@ -45,13 +45,6 @@
 		opacity: 0;
 	}
 
-	:global(#wrapper > * > .inner) {
-		padding: 4em 0 2em 0;
-		margin: 0 auto;
-		max-width: 65em;
-		width: calc(100% - 6em);
-	}
-
 	@media screen and (max-width: 736px) {
 		#wrapper > * > .inner {
 			padding: 3em 0 1em 0;

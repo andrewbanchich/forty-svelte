@@ -31,7 +31,7 @@
 		<Tile
 			width="100%"
 			title={article.title}
-			color={color(i)}
+			color="{color(i)}aa"
 			description={article.description}
 			image={article.image}
 		/>
@@ -39,12 +39,6 @@
 </section>
 
 <style>
-	/* #tiles {
-		display: flex;
-		flex-wrap: wrap;
-		border-top: 0;
-		} */
-
 	#tiles {
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
