@@ -58,6 +58,7 @@
 		width: 100%;
 		padding: 4em 3em 2em 3em;
 		transition: background-color ease 250ms;
+		color: #fff;
 	}
 
 	a:hover {
