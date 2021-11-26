@@ -1,14 +1,21 @@
+<script lang="ts">
+	export let open;
+</script>
+
 <nav id="menu">
-	<ul class="links">
-		<li><a href="/">Home</a></li>
-		<li><a href="/landing">Landing</a></li>
-		<li><a href="/generic">Generic</a></li>
-		<li><a href="/elements">Elements</a></li>
-	</ul>
-	<ul class="actions stacked">
-		<li><a href="#" class="button primary fit">Get Started</a></li>
-		<li><a href="#" class="button fit">Log In</a></li>
-	</ul>
+	<div class="inner">
+		<ul class="links">
+			<li><a href="/">Home</a></li>
+			<li><a href="/landing">Landing</a></li>
+			<li><a href="/generic">Generic</a></li>
+			<li><a href="/elements">Elements</a></li>
+		</ul>
+
+		<ul class="actions stacked">
+			<li><a href="#" class="button primary fit">Get Started</a></li>
+			<li><a href="#" class="button fit">Log In</a></li>
+		</ul>
+	</div>
 </nav>
 
 <style>
@@ -25,13 +32,14 @@
 		box-shadow: none;
 		height: 100%;
 		left: 0;
-		opacity: 0;
+		/* opacity: 0; */
 		overflow: hidden;
 		padding: 3em 2em;
 		position: fixed;
 		top: 0;
-		visibility: hidden;
+		/* visibility: hidden; */
 		width: 100%;
+		/* z-index: 3; */
 	}
 
 	#menu .inner {
@@ -46,10 +54,10 @@
 		-webkit-overflow-scrolling: touch;
 		max-width: 100%;
 		max-height: 100vh;
-		opacity: 0;
+		/* opacity: 0; */
 		overflow: auto;
 		text-align: center;
-		visibility: hidden;
+		/* visibility: hidden; */
 		width: 18em;
 	}
 
@@ -61,16 +69,13 @@
 		margin-bottom: 3em;
 	}
 
-	#menu ul {
+	ul {
 		margin: 0 0 1em 0;
-	}
-
-	#menu ul.links {
 		list-style: none;
 		padding: 0;
 	}
 
-	#menu ul.links > li {
+	li {
 		padding: 0;
 	}
 
@@ -95,71 +100,13 @@
 		border-top: 0 !important;
 	}
 
-	#menu .close {
-		-moz-transition: color 0.2s ease-in-out;
-		-webkit-transition: color 0.2s ease-in-out;
-		-ms-transition: color 0.2s ease-in-out;
-		transition: color 0.2s ease-in-out;
-		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-		border: 0;
-		cursor: pointer;
-		display: block;
-		height: 4em;
-		line-height: 4em;
-		overflow: hidden;
-		padding-right: 1.25em;
-		position: absolute;
-		right: 0;
-		text-align: right;
-		text-indent: 8em;
-		top: 0;
-		vertical-align: middle;
-		white-space: nowrap;
-		width: 8em;
-	}
-
-	#menu .close:before,
-	#menu .close:after {
-		-moz-transition: opacity 0.2s ease-in-out;
-		-webkit-transition: opacity 0.2s ease-in-out;
-		-ms-transition: opacity 0.2s ease-in-out;
-		transition: opacity 0.2s ease-in-out;
-		background-position: center;
-		background-repeat: no-repeat;
-		content: '';
-		display: block;
-		height: 4em;
-		position: absolute;
-		right: 0;
-		top: 0;
-		width: 4em;
-	}
-
-	#menu .close:before {
-		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 2%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='20' y2='20' /%3E%3Cline x1='20' y1='0' x2='0' y2='20' /%3E%3C/svg%3E");
-	}
-
-	#menu .close:after {
-		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %239bf1ff%3B stroke-width: 2%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='20' y2='20' /%3E%3Cline x1='20' y1='0' x2='0' y2='20' /%3E%3C/svg%3E");
-		opacity: 0;
-	}
-
-	#menu .close:hover:after,
-	#menu .close:active:after {
-		opacity: 1;
-	}
-
-	body.is-ie #menu {
-		background: rgba(42, 47, 74, 0.975);
-	}
-
-	body.is-menu-visible #menu {
+	#menu {
 		pointer-events: auto;
 		opacity: 1;
 		visibility: visible;
 	}
 
-	body.is-menu-visible #menu .inner {
+	#menu .inner {
 		-moz-transform: none;
 		-webkit-transform: none;
 		-ms-transform: none;

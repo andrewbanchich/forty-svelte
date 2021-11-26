@@ -59,7 +59,7 @@
 
 	header {
 		position: relative;
-		z-index: 3;
+		/* z-index: 3; */
 	}
 
 	article h3 {
@@ -87,7 +87,7 @@
 		opacity: 0.85;
 		position: absolute;
 		width: 100%;
-		z-index: 2;
+		/* z-index: 2; */
 	}
 
 	article:after {
@@ -99,7 +99,7 @@
 		position: absolute;
 		top: 0;
 		width: 100%;
-		z-index: 1;
+		/* z-index: 1; */
 	}
 
 	article:hover #color {

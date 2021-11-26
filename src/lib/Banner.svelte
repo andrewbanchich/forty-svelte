@@ -17,7 +17,7 @@
 		</div>
 	</div>
 
-	<div id="color" style="background-color: {color};" />
+	<!-- <div id="color" style="background-color: {color};" /> -->
 </section>
 
 <style>
@@ -41,8 +41,6 @@
 		margin-bottom: -3.25em;
 		max-height: 32em;
 		min-height: 22em;
-		position: relative;
-		top: -3.25em;
 	}
 
 	#content {
@@ -67,10 +65,8 @@
 		height: 100%;
 		left: 0;
 		opacity: 0.85;
-		position: absolute;
-		top: 0;
 		width: 100%;
-		z-index: 1;
+		/* z-index: 1; */
 	}
 
 	#banner h1 {
@@ -87,8 +83,7 @@
 		transition: opacity 1.5s ease, transform 0.5s ease-out, filter 0.5s ease,
 			-webkit-filter 0.5s ease;
 		padding: 0 !important;
-		position: relative;
-		z-index: 2;
+		/* z-index: 2; */
 	}
 
 	#banner > .inner .image {

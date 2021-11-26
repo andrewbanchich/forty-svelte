@@ -10,6 +10,8 @@
 	import Menu from '$lib/Menu.svelte';
 	import Contact from '$lib/Contact.svelte';
 	import Footer from '$lib/Footer.svelte';
+
+	let menuOpen = false;
 </script>
 
 <svelte:head>
@@ -18,13 +20,16 @@
 </svelte:head>
 
 <div id="wrapper">
-	<Header />
-	<Menu />
+	<Header bind:menuOpen />
 
 	<slot />
 
 	<Contact />
 	<Footer />
+
+	{#if menuOpen}
+		<Menu bind:open={menuOpen} />
+	{/if}
 </div>
 
 <style>
@@ -34,7 +39,6 @@
 			opacity 0.375s ease-out;
 		-ms-transition: -ms-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
 		transition: filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
-		padding-top: 3.25em;
 	}
 
 	#wrapper.is-transitioning {
