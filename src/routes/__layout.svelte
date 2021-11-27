@@ -34,34 +34,6 @@
 
 <style>
 	#wrapper {
-		-moz-transition: -moz-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
-		-webkit-transition: -webkit-filter 0.35s ease, -webkit-filter 0.35s ease,
-			opacity 0.375s ease-out;
-		-ms-transition: -ms-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
 		transition: filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
-	}
-
-	#wrapper.is-transitioning {
-		opacity: 0;
-	}
-
-	@media screen and (max-width: 736px) {
-		#wrapper > * > .inner {
-			padding: 3em 0 1em 0;
-			width: calc(100% - 3em);
-		}
-	}
-
-	@media screen and (max-width: 736px) {
-		#wrapper {
-			padding-top: 2.75em;
-		}
-	}
-
-	body.is-menu-visible #wrapper {
-		-moz-filter: blur(0.5em);
-		-webkit-filter: blur(0.5em);
-		-ms-filter: blur(0.5em);
-		filter: blur(0.5em);
 	}
 </style>

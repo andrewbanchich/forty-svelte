@@ -44,8 +44,8 @@
 		text-transform: uppercase;
 	}
 
-	#banner h1 {
-		font-size: 3.25em;
+	h1 {
+		font-size: clamp(3rem, -0.25rem + 5.5556vw, 5rem);
 	}
 
 	.inner {
