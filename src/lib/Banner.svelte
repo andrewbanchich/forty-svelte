@@ -70,49 +70,4 @@
 		min-height: 30em;
 		max-height: 50em;
 	}
-
-	@media screen and (max-width: 1280px) {
-		#banner {
-			background-attachment: scroll;
-		}
-	}
-
-	@media screen and (max-width: 736px) {
-		#banner {
-			padding: 5em 0 1em 0;
-			height: auto;
-			margin-bottom: -2.75em;
-			max-height: none;
-			min-height: 0;
-			top: -2.75em;
-		}
-
-		#banner h1 {
-			font-size: 2em;
-		}
-
-		#content {
-			display: block;
-		}
-
-		.major {
-			height: auto;
-			min-height: 0;
-			max-height: none;
-		}
-	}
-
-	@media screen and (max-width: 480px) {
-		#banner {
-			padding: 6em 0 2em 0;
-		}
-
-		#content p br {
-			display: none;
-		}
-
-		#banner.major {
-			padding: 8em 0 4em 0;
-		}
-	}
 </style>
