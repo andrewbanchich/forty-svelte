@@ -7,13 +7,16 @@
 	export let image;
 
 	let scrollY = 0;
-
-	$: console.log(scrollY);
+	$: bgPosition = -scrollY / 2;
 </script>
 
 <svelte:window bind:scrollY />
 
-<section id="banner" class:major style="background-image: url('{assets}{image}'); top: 100;">
+<section
+	id="banner"
+	class:major
+	style="background-image: url('{assets}{image}'); background-position: center {bgPosition}px;"
+>
 	<div class="inner">
 		<header class="major">
 			<h1><slot name="header" /></h1>
@@ -30,7 +33,7 @@
 		display: flex;
 		align-items: center;
 		background-attachment: fixed;
-		background-position: center;
+
 		background-repeat: no-repeat;
 		background-size: cover;
 		height: 75vh;
