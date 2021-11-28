@@ -1,4 +1,4 @@
-import{S as T,i as Z,s as w,e as s,t as P,k as b,c as r,a as u,g as _,d as n,n as E,b as l,Z as z,f as B,D as t,F as M}from"../chunks/vendor-5e931cdc.js";function J(R){let i,m,e,o,p,x,D,c,d,k,I,v,N,C,h,G,S,f,j;return{c(){i=s("div"),m=s("section"),e=s("div"),o=s("header"),p=s("h1"),x=P("Generic"),D=b(),c=s("span"),d=s("img"),I=b(),v=s("p"),N=P(`Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus.\r
+import{S as T,i as Z,s as w,e as s,t as P,k as b,c as r,a as u,g as _,d as n,n as E,b as l,Z as z,f as B,D as t,F as M}from"../chunks/vendor-65f39648.js";function J(R){let i,m,e,o,p,x,D,c,d,k,I,v,N,C,h,G,S,f,j;return{c(){i=s("div"),m=s("section"),e=s("div"),o=s("header"),p=s("h1"),x=P("Generic"),D=b(),c=s("span"),d=s("img"),I=b(),v=s("p"),N=P(`Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus.\r
 				Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam,\r
 				vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet,\r
 				fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in\r
