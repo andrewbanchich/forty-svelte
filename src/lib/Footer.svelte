@@ -9,8 +9,14 @@
 		<a href="">
 			<TwitterIcon />
 		</a>
-		<GitHubIcon />
-		<LinkedInIcon />
+
+		<a href="">
+			<GitHubIcon />
+		</a>
+
+		<a href="">
+			<LinkedInIcon />
+		</a>
 	</div>
 
 	<ul class="copyright">
