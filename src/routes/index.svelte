@@ -17,7 +17,8 @@
 			and released under the Creative Commons.
 		</p>
 
-		<Button text="Get Started" href="#one">
+		<Button href="#one">
+			Get started
 			<svg slot="icon" viewBox="0 0 20 20" width="24px" fill="currentColor">
 				<path
 					fill-rule="evenodd"
