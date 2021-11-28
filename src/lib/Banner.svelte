@@ -1,5 +1,6 @@
 <script>
 	import { assets } from '$app/paths';
+	import { fade, fly } from 'svelte/transition';
 
 	export const color = '#242943';
 	export const parallax = false;
@@ -18,11 +19,13 @@
 	style="background-image: url('{assets}{image}'); background-position: center {bgPosition}px;"
 >
 	<div class="inner">
-		<header class="major">
-			<h1><slot name="header" /></h1>
+		<header class="major" in:fly={{ x: -20, duration: 500 }}>
+			<h1>
+				<slot name="header" />
+			</h1>
 		</header>
 
-		<div id="content">
+		<div id="content" in:fly={{ x: -20, duration: 500 }}>
 			<slot />
 		</div>
 	</div>
