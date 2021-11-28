@@ -6,7 +6,10 @@
 </script>
 
 <Banner image="/images/banner.jpg" major>
-	<span slot="header">Hi, my name is Forty</span>
+	<span slot="header">
+		Hi, my name is Forty
+		<hr />
+	</span>
 
 	<div id="content">
 		<p>
@@ -14,15 +17,15 @@
 			and released under the Creative Commons.
 		</p>
 
-		<Button text="Get Started" href="#one"
-			><svg slot="icon" viewBox="0 0 20 20" width="24px" fill="currentColor">
+		<Button text="Get Started" href="#one">
+			<svg slot="icon" viewBox="0 0 20 20" width="24px" fill="currentColor">
 				<path
 					fill-rule="evenodd"
 					d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
 					clip-rule="evenodd"
 				/>
-			</svg></Button
-		>
+			</svg>
+		</Button>
 	</div>
 </Banner>
 
@@ -37,5 +40,12 @@
 		align-items: center;
 		margin: 0 0 2em 0;
 		gap: 1.5rem;
+	}
+
+	hr {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		background-color: #fff;
+		height: 5px;
 	}
 </style>
