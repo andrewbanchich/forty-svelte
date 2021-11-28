@@ -6,7 +6,9 @@
 
 <footer id="footer">
 	<div id="social-media">
-		<TwitterIcon />
+		<a href="">
+			<TwitterIcon />
+		</a>
 		<GitHubIcon />
 		<LinkedInIcon />
 	</div>
