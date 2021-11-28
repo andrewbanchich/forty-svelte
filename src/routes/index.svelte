@@ -5,7 +5,7 @@
 	import WideSection from '$lib/WideSection.svelte';
 </script>
 
-<Banner image="/images/banner.jpg" major>
+<Banner image="/images/banner.jpg" height="75vh">
 	<span slot="header">
 		Hi, my name is Forty
 		<hr />

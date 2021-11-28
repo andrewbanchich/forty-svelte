@@ -2,7 +2,7 @@
 	import Banner from '$lib/Banner.svelte';
 </script>
 
-<Banner color="#8d82c4" image="/images/pic07.jpg">
+<Banner color="hsl(250, 36%, 64%, 85%)" image="/images/pic07.jpg">
 	<span slot="header">Landing</span>
 
 	<p>

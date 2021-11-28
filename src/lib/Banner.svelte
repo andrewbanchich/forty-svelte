@@ -2,10 +2,10 @@
 	import { assets } from '$app/paths';
 	import { fade, fly } from 'svelte/transition';
 
-	export const color = '#242943';
-	export const parallax = false;
-	export const major = false;
+	export let color = 'hsl(231, 28%, 23%, 85%)';
+	export let parallax = false;
 	export let image;
+	export let height = '60vh';
 
 	let scrollY = 0;
 	$: bgPosition = -scrollY / 2;
@@ -15,10 +15,9 @@
 
 <section
 	id="banner"
-	class:major
-	style="background-image: url('{assets}{image}'); background-position: center {bgPosition}px;"
+	style="background-image: url('{assets}{image}'); background-position: center {bgPosition}px; height: {height};"
 >
-	<div class="inner">
+	<div class="inner" style="background-color: {color};">
 		<header class="major" in:fly={{ x: -20, duration: 500 }}>
 			<h1>
 				<slot name="header" />
@@ -36,14 +35,11 @@
 		display: flex;
 		align-items: center;
 		background-attachment: fixed;
-
 		background-repeat: no-repeat;
 		background-size: cover;
-		height: 75vh;
 	}
 
 	.inner {
-		background-color: hsl(231, 28%, 23%, 85%);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -77,11 +73,5 @@
 
 	.inner header > :first-child:after {
 		max-width: 100%;
-	}
-
-	#banner.major {
-		height: 75vh;
-		min-height: 30em;
-		max-height: 50em;
 	}
 </style>
