@@ -1,35 +1,42 @@
+<script>
+	import GitHubIcon from './icons/GitHubIcon.svelte';
+	import LinkedInIcon from './icons/LinkedInIcon.svelte';
+	import TwitterIcon from './icons/TwitterIcon.svelte';
+</script>
+
 <footer id="footer">
-	<div class="inner">
-		<ul class="icons">
-			<li>
-				<a href="#" class="icon brands fa-twitter"> Twitter </a>
-			</li>
-			<li>
-				<a href="#" class="icon brands fa-facebook-f"> Facebook </a>
-			</li>
-			<li>
-				<a href="#" class="icon brands fa-instagram"> Instagram </a>
-			</li>
-			<li><a href="#" class="icon brands fa-github"> GitHub </a></li>
-			<li>
-				<a href="#" class="icon brands fa-linkedin-in">LinkedIn </a>
-			</li>
-		</ul>
-		<ul class="copyright">
-			<li>&copy; Untitled</li>
-			<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-		</ul>
+	<div id="social-media">
+		<TwitterIcon />
+		<GitHubIcon />
+		<LinkedInIcon />
 	</div>
+
+	<ul class="copyright">
+		<li>&copy; Untitled</li>
+		<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+	</ul>
 </footer>
 
 <style>
-	#footer .copyright {
+	footer {
+		padding: 4rem;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	#social-media {
+		display: flex;
+		gap: 1rem;
+	}
+
+	.copyright {
 		font-size: 0.8em;
 		list-style: none;
 		padding-left: 0;
 	}
 
-	#footer .copyright li {
+	.copyright li {
 		border-left: solid 1px rgba(212, 212, 255, 0.1);
 		color: rgba(244, 244, 255, 0.2);
 		display: inline-block;
@@ -38,22 +45,13 @@
 		padding-left: 1em;
 	}
 
-	#footer .copyright li:first-child {
+	.copyright li:first-child {
 		border-left: 0;
 		margin-left: 0;
 		padding-left: 0;
 	}
 
-	.icon:before {
-		-moz-osx-font-smoothing: grayscale;
-		-webkit-font-smoothing: antialiased;
-		display: inline-block;
-		font-style: normal;
-		font-variant: normal;
-		text-rendering: auto;
-		line-height: 1;
-		text-transform: none !important;
-		font-family: 'Font Awesome 5 Free';
-		font-weight: 400;
+	a {
+		text-decoration: none;
 	}
 </style>
