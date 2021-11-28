@@ -1,16 +1,16 @@
-import{S as T,i as Z,s as w,e as s,t as b,k as P,c as r,a as u,g as _,d as n,n as E,b as l,Z as z,f as B,D as t,F as M}from"../chunks/vendor-19b1f390.js";function J(R){let i,m,e,o,p,x,D,c,d,k,I,v,N,C,h,G,S,f,j;return{c(){i=s("div"),m=s("section"),e=s("div"),o=s("header"),p=s("h1"),x=b("Generic"),D=P(),c=s("span"),d=s("img"),I=P(),v=s("p"),N=b(`Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus.\r
+import{S as T,i as Y,s as w,e as s,t as P,k as b,c as r,a as u,g as _,d as n,n as E,b as l,Y as z,f as B,D as t,F as M}from"../chunks/vendor-e9de8e03.js";function J(R){let i,m,e,o,p,x,D,c,d,k,I,v,N,C,h,G,S,f,j;return{c(){i=s("div"),m=s("section"),e=s("div"),o=s("header"),p=s("h1"),x=P("Generic"),D=b(),c=s("span"),d=s("img"),I=b(),v=s("p"),N=P(`Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus.\r
 				Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam,\r
 				vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet,\r
 				fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in\r
 				purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum\r
-				convallis elit. Pellentesque enim turpis, hendrerit.`),C=P(),h=s("p"),G=b(`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis.\r
+				convallis elit. Pellentesque enim turpis, hendrerit.`),C=b(),h=s("p"),G=P(`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis.\r
 				Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\r
 				Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula\r
 				viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet\r
 				venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in\r
 				lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis\r
 				egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus,\r
-				vel sed vehicula.`),S=P(),f=s("p"),j=b(`Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor\r
+				vel sed vehicula.`),S=b(),f=s("p"),j=P(`Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor\r
 				imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit\r
 				amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget\r
 				turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem\r
@@ -30,4 +30,4 @@ import{S as T,i as Z,s as w,e as s,t as b,k as P,c as r,a as u,g as _,d as n,n a
 				imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit\r
 				amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget\r
 				turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem\r
-				ipsum dolor.`),O.forEach(n),a.forEach(n),y.forEach(n),g.forEach(n),this.h()},h(){l(o,"class","major"),z(d.src,k="images/pic11.jpg")||l(d,"src",k),l(d,"alt",""),l(c,"class","image main"),l(e,"class","inner"),l(m,"id","one"),l(i,"id","main"),l(i,"class","alt")},m(q,g){B(q,i,g),t(i,m),t(m,e),t(e,o),t(o,p),t(p,x),t(e,D),t(e,c),t(c,d),t(e,I),t(e,v),t(v,N),t(e,C),t(e,h),t(h,G),t(e,S),t(e,f),t(f,j)},p:M,i:M,o:M,d(q){q&&n(i)}}}class Q extends T{constructor(i){super();Z(this,i,null,J,w,{})}}export{Q as default};
+				ipsum dolor.`),O.forEach(n),a.forEach(n),y.forEach(n),g.forEach(n),this.h()},h(){l(o,"class","major"),z(d.src,k="images/pic11.jpg")||l(d,"src",k),l(d,"alt",""),l(c,"class","image main"),l(e,"class","inner"),l(m,"id","one"),l(i,"id","main"),l(i,"class","alt")},m(q,g){B(q,i,g),t(i,m),t(m,e),t(e,o),t(o,p),t(p,x),t(e,D),t(e,c),t(c,d),t(e,I),t(e,v),t(v,N),t(e,C),t(e,h),t(h,G),t(e,S),t(e,f),t(f,j)},p:M,i:M,o:M,d(q){q&&n(i)}}}class Q extends T{constructor(i){super();Y(this,i,null,J,w,{})}}export{Q as default};
