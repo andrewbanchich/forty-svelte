@@ -33,7 +33,7 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		height: 60vh;
+		height: 75vh;
 	}
 
 	.inner {
