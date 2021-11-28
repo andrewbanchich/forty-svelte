@@ -5,7 +5,7 @@
 </script>
 
 <header id="header">
-	<a href={base} id="logo">
+	<a href={base || '/'} id="logo">
 		<strong>Forty</strong>
 		<span>by HTML5 UP</span>
 	</a>
