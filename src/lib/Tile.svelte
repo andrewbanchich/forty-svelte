@@ -1,5 +1,6 @@
 <script>
 	import { assets, base } from '$app/paths';
+	import { fade } from 'svelte/transition';
 
 	export let title;
 	export let description;
@@ -8,7 +9,10 @@
 	export let color;
 </script>
 
-<article style="background-image: url('{assets}{image}'); width: {width};">
+<article
+	style="background-image: url('{assets}{image}'); width: {width};"
+	out:fade={{ duration: 400 }}
+>
 	<a href="{base}/landing" style="background-color: {color};">
 		<header class="major">
 			<h3>{title}</h3>
