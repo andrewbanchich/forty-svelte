@@ -1,12 +1,19 @@
 <script>
 	import { assets } from '$app/paths';
 
-	export let color = '#242943';
+	export const color = '#242943';
+	export const parallax = false;
+	export const major = false;
 	export let image;
-	export let major = false;
+
+	let scrollY = 0;
+
+	$: console.log(scrollY);
 </script>
 
-<section id="banner" class:major style="background-image: url('{assets}{image}');">
+<svelte:window bind:scrollY />
+
+<section id="banner" class:major style="background-image: url('{assets}{image}'); top: 100;">
 	<div class="inner">
 		<header class="major">
 			<h1><slot name="header" /></h1>
