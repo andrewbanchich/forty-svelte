@@ -44,16 +44,6 @@
 		padding-left: 0;
 	}
 
-	@media screen and (max-width: 480px) {
-		#footer .copyright li {
-			display: block;
-			border-left: 0;
-			margin-left: 0;
-			padding-left: 0;
-			line-height: inherit;
-		}
-	}
-
 	.icon:before {
 		-moz-osx-font-smoothing: grayscale;
 		-webkit-font-smoothing: antialiased;
@@ -65,31 +55,5 @@
 		text-transform: none !important;
 		font-family: 'Font Awesome 5 Free';
 		font-weight: 400;
-	}
-
-	.icon.alt:before {
-		background-color: #ffffff;
-		border-radius: 100%;
-		color: #242943;
-		display: inline-block;
-		height: 2em;
-		line-height: 2em;
-		text-align: center;
-		width: 2em;
-	}
-
-	a.icon.alt:before {
-		-moz-transition: background-color 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out;
-		transition: background-color 0.2s ease-in-out;
-	}
-
-	a.icon.alt:hover:before {
-		background-color: #6fc3df;
-	}
-
-	a.icon.alt:active:before {
-		background-color: #37a6cb;
 	}
 </style>

@@ -1,6 +1,10 @@
+<script>
+	import Button from './Button.svelte';
+</script>
+
 <section id="contact">
 	<div class="inner">
-		<section>
+		<section id="form">
 			<form method="post" action="#">
 				<div class="fields">
 					<div class="field half">
@@ -16,12 +20,14 @@
 						<textarea name="message" id="message" rows="6" />
 					</div>
 				</div>
-				<ul class="actions">
-					<li><input type="submit" value="Send Message" class="primary" /></li>
-					<li><input type="reset" value="Clear" /></li>
-				</ul>
+
+				<div id="form-buttons">
+					<Button fill>Send Message</Button>
+					<Button>Clear</Button>
+				</div>
 			</form>
 		</section>
+
 		<section class="split">
 			<section>
 				<div class="contact-method">
@@ -30,6 +36,7 @@
 					<a href="#">information@untitled.tld</a>
 				</div>
 			</section>
+
 			<section>
 				<div class="contact-method">
 					<span class="icon solid alt fa-phone" />
@@ -37,6 +44,7 @@
 					<span>(000) 000-0000 x12387</span>
 				</div>
 			</section>
+
 			<section>
 				<div class="contact-method">
 					<span class="icon solid alt fa-home" />
@@ -59,15 +67,19 @@
 	}
 
 	#contact > .inner {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
 		display: flex;
-		padding: 0 !important;
+	}
+
+	#form {
+		padding: 3rem;
+	}
+
+	#form-buttons {
+		display: flex;
+		gap: 1rem;
 	}
 
 	#contact > .inner > :nth-child(2n - 1) {
-		padding: 4em 3em 2em 0;
 		border-right: solid 1px rgba(212, 212, 255, 0.1);
 		width: 60%;
 	}
@@ -98,36 +110,5 @@
 
 	#contact > .inner > .split > :first-child:before {
 		display: none;
-	}
-
-	@media screen and (max-width: 980px) {
-		#contact > .inner {
-			display: block;
-		}
-
-		#contact > .inner > :nth-child(2n - 1) {
-			padding: 4em 0 2em 0;
-			border-right: 0;
-			width: 100%;
-		}
-
-		#contact > .inner > :nth-child(2n) {
-			padding-left: 0;
-			width: 100%;
-		}
-
-		#contact > .inner > .split > * {
-			padding: 3em 0 1em 0;
-		}
-
-		#contact > .inner > .split > :first-child:before {
-			display: block;
-		}
-	}
-
-	@media screen and (max-width: 736px) {
-		#contact > .inner > :nth-child(2n - 1) {
-			padding: 3em 0 1em 0;
-		}
 	}
 </style>
