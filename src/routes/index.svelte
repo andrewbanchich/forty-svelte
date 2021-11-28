@@ -2,7 +2,7 @@
 	import Banner from '$lib/Banner.svelte';
 	import Button from '$lib/Button.svelte';
 	import Tiles from '$lib/Tiles.svelte';
-	import WideSection from '$lib/WideSection.svelte';
+	import Section from '$lib/Section.svelte';
 </script>
 
 <Banner image="/images/banner.jpg" height="75vh">
@@ -31,7 +31,13 @@
 
 <div id="main">
 	<Tiles />
-	<WideSection />
+	<Section title="Massa libero">
+		Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna
+		magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna.
+		Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem
+		consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus
+		amet pharetra et feugiat tempus.
+	</Section>
 </div>
 
 <style>
