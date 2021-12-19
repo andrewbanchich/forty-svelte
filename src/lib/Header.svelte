@@ -21,10 +21,10 @@
 			 box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15); */
 		cursor: default;
 		font-weight: 600;
-		height: 3.25em;
+		height: 3.25rem;
 		left: 0;
-		letter-spacing: 0.25em;
-		line-height: 3.25em;
+		letter-spacing: 0.25rem;
+		line-height: 3.25rem;
 		margin: 0;
 		position: fixed;
 		text-transform: uppercase;
@@ -36,7 +36,7 @@
 	#logo {
 		border: 0;
 		display: inline-block;
-		font-size: 0.8em;
+		font-size: 0.8rem;
 		height: inherit;
 		line-height: inherit;
 		padding: 0 1.5em;
@@ -63,7 +63,7 @@
 	#menu {
 		border: 0;
 		display: block;
-		font-size: 0.8em;
+		font-size: 0.8rem;
 		height: inherit;
 		line-height: inherit;
 		padding: 0 0.75em;
