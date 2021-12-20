@@ -27,7 +27,7 @@
 
 <style>
 	footer {
-		padding: 4rem;
+		padding: 4rem 3rem 2rem 3rem;
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
@@ -39,7 +39,7 @@
 	}
 
 	.copyright {
-		font-size: 0.8em;
+		font-size: 0.8rem;
 		list-style: none;
 		padding-left: 0;
 	}
