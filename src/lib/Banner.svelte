@@ -43,7 +43,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		padding: 4rem;
+		padding: 3rem;
 	}
 
 	#content {
