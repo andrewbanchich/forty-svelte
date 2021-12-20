@@ -1,7 +1,7 @@
 <div>
 	<svg
-		width="24"
-		height="24"
+		width="18"
+		height="18"
 		viewBox="0 0 24 24"
 		fill="none"
 		stroke="currentColor"
@@ -22,7 +22,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding: 0.8rem;
+		padding: 0.6rem;
 		border-radius: 50%;
 	}
 </style>
