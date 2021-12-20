@@ -2,7 +2,7 @@
 	import { assets } from '$app/paths';
 	import { fly } from 'svelte/transition';
 
-	export let color = 'hsl(231, 28%, 23%, 85%)';
+	export let color = 'hsl(230, 30%, 20%, 85%)';
 	export let parallax = false;
 	export let image;
 	export let height = '60vh';
@@ -47,7 +47,7 @@
 	}
 
 	#content {
-		font-size: 0.7em;
+		font-size: 0.7rem;
 		font-weight: 600;
 		letter-spacing: 0.25em;
 		text-transform: uppercase;
