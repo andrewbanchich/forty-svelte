@@ -56,6 +56,7 @@
 	h1 {
 		font-size: clamp(3rem, -0.25rem + 5.5556vw, 5rem);
 		margin-bottom: 0;
+		max-width: 65rem;
 	}
 
 	.inner {
