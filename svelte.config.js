@@ -13,7 +13,7 @@ const config = {
   kit: {
     adapter: adapter(),
     paths: {
-      base: dev ? '' : '/forty-svelte'
+      base: dev ? '/' : '/forty-svelte'
     },
     target: '#svelte'
   }
