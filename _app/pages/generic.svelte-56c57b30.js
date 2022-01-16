@@ -1,4 +1,4 @@
-import{S as T,i as Z,s as w,e as s,t as P,k as b,c as r,a as u,g as _,d as n,n as E,b as l,Z as z,f as B,D as t,F as M}from"../chunks/vendor-65f39648.js";function J(R){let i,m,e,o,p,x,D,c,d,k,I,v,N,C,h,G,S,f,j;return{c(){i=s("div"),m=s("section"),e=s("div"),o=s("header"),p=s("h1"),x=P("Generic"),D=b(),c=s("span"),d=s("img"),I=b(),v=s("p"),N=P(`Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus.\r
+import{S as T,i as Z,s as w,e as s,t as P,k as b,c as r,a as u,h as _,d as n,m as E,b as l,Z as z,g as B,F as t,H}from"../chunks/vendor-31c82188.js";function J(R){let i,m,e,o,p,x,I,c,d,M,D,v,N,C,h,G,S,f,j;return{c(){i=s("div"),m=s("section"),e=s("div"),o=s("header"),p=s("h1"),x=P("Generic"),I=b(),c=s("span"),d=s("img"),D=b(),v=s("p"),N=P(`Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus.\r
 				Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam,\r
 				vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet,\r
 				fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in\r
@@ -14,7 +14,7 @@ import{S as T,i as Z,s as w,e as s,t as P,k as b,c as r,a as u,g as _,d as n,n a
 				imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit\r
 				amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget\r
 				turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem\r
-				ipsum dolor.`),this.h()},l(q){i=r(q,"DIV",{id:!0,class:!0});var g=u(i);m=r(g,"SECTION",{id:!0});var y=u(m);e=r(y,"DIV",{class:!0});var a=u(e);o=r(a,"HEADER",{class:!0});var A=u(o);p=r(A,"H1",{});var H=u(p);x=_(H,"Generic"),H.forEach(n),A.forEach(n),D=E(a),c=r(a,"SPAN",{class:!0});var L=u(c);d=r(L,"IMG",{src:!0,alt:!0}),L.forEach(n),I=E(a),v=r(a,"P",{});var V=u(v);N=_(V,`Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus.\r
+				ipsum dolor.`),this.h()},l(q){i=r(q,"DIV",{id:!0,class:!0});var g=u(i);m=r(g,"SECTION",{id:!0});var k=u(m);e=r(k,"DIV",{class:!0});var a=u(e);o=r(a,"HEADER",{class:!0});var y=u(o);p=r(y,"H1",{});var A=u(p);x=_(A,"Generic"),A.forEach(n),y.forEach(n),I=E(a),c=r(a,"SPAN",{class:!0});var L=u(c);d=r(L,"IMG",{src:!0,alt:!0}),L.forEach(n),D=E(a),v=r(a,"P",{});var V=u(v);N=_(V,`Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus.\r
 				Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam,\r
 				vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet,\r
 				fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in\r
@@ -30,4 +30,4 @@ import{S as T,i as Z,s as w,e as s,t as P,k as b,c as r,a as u,g as _,d as n,n a
 				imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit\r
 				amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget\r
 				turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem\r
-				ipsum dolor.`),O.forEach(n),a.forEach(n),y.forEach(n),g.forEach(n),this.h()},h(){l(o,"class","major"),z(d.src,k="images/pic11.jpg")||l(d,"src",k),l(d,"alt",""),l(c,"class","image main"),l(e,"class","inner"),l(m,"id","one"),l(i,"id","main"),l(i,"class","alt")},m(q,g){B(q,i,g),t(i,m),t(m,e),t(e,o),t(o,p),t(p,x),t(e,D),t(e,c),t(c,d),t(e,I),t(e,v),t(v,N),t(e,C),t(e,h),t(h,G),t(e,S),t(e,f),t(f,j)},p:M,i:M,o:M,d(q){q&&n(i)}}}class Q extends T{constructor(i){super();Z(this,i,null,J,w,{})}}export{Q as default};
+				ipsum dolor.`),O.forEach(n),a.forEach(n),k.forEach(n),g.forEach(n),this.h()},h(){l(o,"class","major"),z(d.src,M="images/pic11.jpg")||l(d,"src",M),l(d,"alt",""),l(c,"class","image main"),l(e,"class","inner"),l(m,"id","one"),l(i,"id","main"),l(i,"class","alt")},m(q,g){B(q,i,g),t(i,m),t(m,e),t(e,o),t(o,p),t(p,x),t(e,I),t(e,c),t(c,d),t(e,D),t(e,v),t(v,N),t(e,C),t(e,h),t(h,G),t(e,S),t(e,f),t(f,j)},p:H,i:H,o:H,d(q){q&&n(i)}}}class Q extends T{constructor(i){super();Z(this,i,null,J,w,{})}}export{Q as default};
