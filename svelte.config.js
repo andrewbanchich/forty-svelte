@@ -15,7 +15,6 @@ const config = {
     paths: {
       base: dev ? '' : '/forty-svelte'
     },
-    ssr: false,
     target: '#svelte'
   }
 };
