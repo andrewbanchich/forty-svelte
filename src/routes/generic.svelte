@@ -1,12 +1,14 @@
-<!-- Main -->
 <div id="main" class="alt">
-	<!-- One -->
 	<section id="one">
 		<div class="inner">
 			<header class="major">
 				<h1>Generic</h1>
 			</header>
-			<span class="image main"><img src="images/pic11.jpg" alt="" /></span>
+
+			<span class="image main">
+				<img src="images/pic11.jpg" alt="" />
+			</span>
+
 			<p>
 				Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus.
 				Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam,
@@ -15,6 +17,7 @@
 				purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum
 				convallis elit. Pellentesque enim turpis, hendrerit.
 			</p>
+
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis.
 				Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
@@ -25,6 +28,7 @@
 				egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus,
 				vel sed vehicula.
 			</p>
+
 			<p>
 				Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor
 				imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit

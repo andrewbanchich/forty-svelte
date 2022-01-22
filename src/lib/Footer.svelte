@@ -22,6 +22,9 @@
 	<ul class="copyright">
 		<li>&copy; Untitled</li>
 		<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+		<li>
+			Svelte integration: <a href="https://github.com/andrewbanchich">Andrew Banchich</a>
+		</li>
 	</ul>
 </footer>
 
