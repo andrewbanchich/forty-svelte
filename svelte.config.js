@@ -1,6 +1,5 @@
-// https://github.com/sveltejs/kit/tree/master/packages/adapter-static#github-pages
-
 import preprocess from 'svelte-preprocess';
+
 import adapter from '@sveltejs/adapter-static';
 
 const dev = process.env.NODE_ENV === 'development';
